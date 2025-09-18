@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best AI Tools by Category</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            color: white;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 25px;
+            padding: 20px;
+        }
+        
+        .category {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .category:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        h2 {
+            font-size: 1.5rem;
+            color: #6e8efb;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f3ff;
+            display: flex;
+            align-items: center;
+        }
+        
+        h2::before {
+            content: "•";
+            margin-right: 10px;
+            color: #a777e3;
+            font-size: 1.8rem;
+        }
+        
+        .tool-list {
+            list-style: none;
+        }
+        
+        .tool-item {
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .tool-item::before {
+            content: "→";
+            margin-right: 10px;
+            color: #a777e3;
+        }
+        
+        .tool-link {
+            color: #444;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 5px 0;
+            transition: color 0.2s ease;
+            display: inline-block;
+            position: relative;
+        }
+        
+        .tool-link:hover {
+            color: #6e8efb;
+        }
+        
+        .tool-link::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #6e8efb;
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+        }
+        
+        .tool-link:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            color: #777;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>The Best AI Tools by Category</h1>
+        <p class="subtitle">A curated directory of the most useful artificial intelligence tools organized by category with direct links to each service.</p>
+    </header>
+    
+    <div class="container">
+        <!-- AI Assistants -->
+        <div class="category">
+            <h2>AI Assistants</h2>
+            <ul class="tool-list">
+                <li class="tool-item"><a href="https://chat.openai.com" class="tool-link" target="_blank">ChatGPT</a></li>
+                <li class="tool-item"><a href="https://grok.ai" class="tool-link" target="_blank">Grok</a></li>
+                <li class="tool-item"><a href="https://claude.ai" class="tool-link" target="_blank">Claude</a></li>
+                <li class="tool-item"><a href="https://gemini.google.com" class="tool-link" target="_blank">Gemini</a></li>
+            </ul>
+        </div>
+        
+        <!-- Video Generation -->
+        <div class="category">
+            <h2>Video Generation</h2>
+            <ul class="tool-list">
+                <li class="tool-item"><a href="https://www.synthesia.io" class="tool-link" target="_blank">Synthesia</a></li>
+                <li class="tool-item"><a href="https://veo.google.com" class="tool-link" target="_blank">Google Veo</a></li>
+                <li class="tool-item"><a href="https://www.opusclip.com" class="tool-link" target="_blank">OpusClip</a></li>
+            </ul>
+        </div>
+        
+        <!-- Image Generation -->
+        <div class="category">
+            <h2>Image Generation</h2>
+            <ul class="tool-list">
+                <li class="tool-item"><a href="https://nanobanana.ai" class="tool-link" target="_blank">Nano Banana</a></li>
+                <li class="tool-item"><a href="https://openai.com/index/gpt-4o/" class="tool-link" target="_blank">GPT-4o</a></li>
+                <li class="tool-item"><a href="https://www.midjourney.com" class="tool-link" target="_blank">Midjourney</a></li>
+            </ul>
+        </div>
+        
+        <!-- Meeting Assistants -->
+        <div class="category">
+            <h2>Meeting Assistants</h2>
+            <ul class="tool-list">
+                <li class="tool-item"><a href="https://www.fathom.video" class="tool-link" target="_blank">Fathom</a></li>
+                <li class="tool-item"><a href="https://nyota.ai" class="tool-link" target="_blank">Nyota</a></li>
+            </ul>
+        </div>
+        
+        <!-- Automation -->
+        <div class="category">
+            <h2>Automation</h2>
+            <ul class="tool-list">
+                <li class="tool-item"><a href="https://n8n.io" class="tool-link" target="_blank">n8n</a></li>
+                <li class="tool-item"><a href="https://manus.ai" class="tool-link" target="_blank">Manus</a></li>
+            </ul>
+        </div>
+        
+        <!-- Research -->
+        <div class="category">
+            <h2>Research</h2>
+            <ul class="tool-list">
+                <li class="tool-item"><a href="https://deepresearch.ai" class="tool-link" target="_blank">Deep Research</a></li>
+                <li class="tool-item"><a href="https://notebooklm.google.com" class="tool-link" target="_blank">NotebookLM</a></li>
+            </ul>
+        </div>
+        
+        <!-- Writing -->
+        <div class="category">
+            <h2>Writing</h2>
+            <ul class="tool-list">
+                <li class="tool-item"><a href="https://rytr.me" class="tool-link" target="_blank">Rytr</a></li>
+                <li class="tool-item"><a href="https://www.sudowrite.com" class="tool-link" target="_blank">Sudowrite</a></li>
+            </ul>
+        </div>
+        
+        <!-- Search Engines -->
+        <div class="category">
+            <h2>Search Engines</h2>
+            <ul class="tool-list">
+                <li class="tool-item"><a href="https://www.google.com" class="tool-link" target="_blank">Google AI Mode</a></li>
+                <li class="tool-item"><a href="https://www.perplexity.ai" class="tool-link" target="_blank">Perplexity</a></li>
+                <li class="tool-item"><a href="https://chat.openai.com" class="tool-link" target="_blank">ChatGPT search</a></li>
+            </ul>
+        </div>
+        
+        <!-- Graphic Design -->
+        <div class="category">
+            <h2>Graphic Design</h2>
+            <ul class="tool-list">
+                <li class="tool-item"><a href="https://www.canva.com/magic-studio/" class="tool-link" target="_blank">Canva Magic Studio</a></li>
+                <li class="tool-item"><a href="https://looka.com" class="tool-link" target="_blank">Looka</a></li>
+            </ul>
+        </div>
+        
+        <!-- App Builders & Coding Tools -->
+        <div class="category">
+            <h2>App Builders & Coding Tools</h2>
+            <ul class="tool-list">
+                <li class="tool-item"><a href="https://lovable.dev" class="tool-link" target="_blank">Lovable</a></li>
+                <li class="tool-item"><a href="https://cursor.sh" class="tool-link" target="_blank">Cursor</a></li>
+            </ul>
+        </div>
+        
+        <!-- Knowledge Management -->
+        <div class="category">
+            <h2>Knowledge Management</h2>
+            <ul class="tool-list">
+                <li class="tool-item"><a href="https://www.notion.com" class="tool-link" target="_blank">Notion Q&A</a></li>
+                <li class="tool-item"><a href="https://www.getguru.com" class="tool-link" target="_blank">Guru</a></li>
+            </ul>
+        </div>
+        
+        <!-- Email -->
+        <div class="category">
+            <h2>Email</h2>
+            <ul class="tool-list">
+                <li class="tool-item"><a href="https://www.hubspot.com/products/marketing/email" class="tool-link" target="_blank">Hubspot Email Writer</a></li>
+                <li class="tool-item"><a href="https://fyxer.ai" class="tool-link" target="_blank">Fyxer</a></li>
+                <li class="tool-item"><a href="https://shortwave.com" class="tool-link" target="_blank">Shortwave</a></li>
+            </ul>
+        </div>
+        
+        <!-- Scheduling -->
+        <div class="category">
+            <h2>Scheduling</h2>
+            <ul class="tool-list">
+                <li class="tool-item"><a href="https://reclaim.ai" class="tool-link" target="_blank">Reclaim</a></li>
+                <li class="tool-item"><a href="https://clockwise.com" class="tool-link" target="_blank">Clockwise</a></li>
+            </ul>
+        </div>
+        
+        <!-- Presentations -->
+        <div class="category">
+            <h2>Presentations</h2>
+            <ul class="tool-list">
+                <li class="tool-item"><a href="https://gamma.app" class="tool-link" target="_blank">Gamma</a></li>
+                <li class="tool-item"><a href="https://www.microsoft.com/en-us/microsoft-copilot/microsoft-365-copilot" class="tool-link" target="_blank">Copilot for PowerPoint</a></li>
+            </ul>
+        </div>
+        
+        <!-- Resume Builders -->
+        <div class="category">
+            <h2>Resume Builders</h2>
+            <ul class="tool-list">
+                <li class="tool-item"><a href="https://www.tealhq.com" class="tool-link" target="_blank">Teal</a></li>
+                <li class="tool-item"><a href="https://www.kickresume.com" class="tool-link" target="_blank">Kickresume</a></li>
+            </ul>
+        </div>
+        
+        <!-- Voice Generation -->
+        <div class="category">
+            <h2>Voice Generation</h2>
+            <ul class="tool-list">
+                <li class="tool-item"><a href="https://elevenlabs.io" class="tool-link" target="_blank">ElevenLabs</a></li>
+                <li class="tool-item"><a href="https://murf.ai" class="tool-link" target="_blank">Murf</a></li>
+            </ul>
+        </div>
+        
+        <!-- Music Generation -->
+        <div class="category">
+            <h2>Music Generation</h2>
+            <ul class="tool-list">
+                <li class="tool-item"><a href="https://suno.com" class="tool-link" target="_blank">Suno</a></li>
+                <li class="tool-item"><a href="https://udio.com" class="tool-link" target="_blank">Udio</a></li>
+            </ul>
+        </div>
+        
+        <!-- Marketing -->
+        <div class="category">
+            <h2>Marketing</h2>
+            <ul class="tool-list">
+                <li class="tool-item"><a href="https://www.adcreative.ai" class="tool-link" target="_blank">AdCreative</a></li>
+                <li class="tool-item"><a href="https://www.airops.com" class="tool-link" target="_blank">AirOps</a></li>
+            </ul>
+        </div>
+        
+        <!-- Sales -->
+        <div class="category">
+            <h2>Sales</h2>
+            <ul class="tool-list">
+                <li class="tool-item"><a href="https://attio.com" class="tool-link" target="_blank">Attio</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <footer>
+        <p>© 2023 AI Tools Directory. All product names, logos, and brands are property of their respective owners.</p>
+    </footer>
+</body>
+</html>
